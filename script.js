@@ -15,5 +15,5 @@ function jsSend() {
 } 
 
 function jsInstantSend(webHookURL, thaMessage) {
-  fetch(webHookURL, {method: 'POST',headers={"Content-Type": "application/json"},JSON.stringify({content:thaMessage})})
+  fetch(webHookURL, {method: 'POST',headers:{"Content-Type": "application/json"},JSON.stringify({content:thaMessage})})
 }

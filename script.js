@@ -13,3 +13,7 @@ function jsSend() {
   const message = prompt('add a message')
   fetch(url,{method: 'POST',headers:{'Content-Type': 'application/json'},body: JSON.stringify({content: message})})
 } 
+
+function jsInstantSend(webHookURL, thaMessage) {
+  fetch(webHookURL, {method: 'POST',headers={"Content-Type": "application/json"},JSON.stringify({content:thaMessage})})
+}

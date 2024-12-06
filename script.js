@@ -9,8 +9,8 @@ if (/android|iphone|ipad/i.test(navigator.userAgent.toLowerCase())) {
    document.getElementById("stupidtitle").innerText = "Lays Webhooker for Discord for Linux/Mobile Desktop Mode"
 }
 function jsSend() {
-  const url = prompt('add a webhook url')
-  const message = prompt('add a message')
+  const url = prompt('Add a Webhook URL (By Lays Webhooker)')
+  const message = prompt('Add a message (By Lays Webhooker)')
   fetch(url,{method: 'POST',headers:{'Content-Type': 'application/json'},body: JSON.stringify({content: message})})
 } 
 
